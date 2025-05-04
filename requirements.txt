@@ -1,0 +1,13 @@
+torch
+transformers
+datasets
+scikit-learn
+pandas
+matplotlib
+streamlit
+nltk
+wordcloud
+scipy
+torchvision
+torchaudio
+xgboost

@@ -1,0 +1,274 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2820
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Bold;\f1\froman\fcharset0 Times-Roman;\f2\fmodern\fcharset0 Courier;
+\f3\fmodern\fcharset0 Courier-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red109\green109\blue109;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c50196\c50196\c50196;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid2\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid401\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}
+{\list\listtemplateid6\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid501\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid502\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid6}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}{\listoverride\listid6\listoverridecount0\ls6}}
+\margl1440\margr1440\vieww12320\viewh9500\viewkind0
+\deftab720
+\pard\pardeftab720\sa321\partightenfactor0
+
+\f0\b\fs48 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Step 0: Set Up a Clean Python Environment\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf0 \strokec2 \uc0\u9989  Recommended: Use 
+\f2\fs26 \strokec2 conda
+\f1\fs24 \strokec2  or 
+\f2\fs26 \strokec2 venv
+\f1\fs24 \strokec2  to avoid conflicts.\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf0 \strokec2 Using conda:\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b0\fs26 \cf0 \strokec2 bash\
+conda create -n amazon_sentiment python=3.10\
+conda activate amazon_sentiment\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf0 \strokec2 Or using venv:\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b0\fs26 \cf0 \strokec2 bash\
+python3 -m venv amazon_sentiment\
+source amazon_sentiment/bin/activate\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs24 \cf3 \strokec3 \
+\pard\pardeftab720\sa321\partightenfactor0
+
+\f0\b\fs48 \cf0 \strokec2 Step 1: Install Requirements\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf0 \strokec2 \uc0\u9989  Install all needed libraries at once using the 
+\f2\fs26 \strokec2 requirements.txt
+\f1\fs24 \strokec2  provided.\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 \strokec2 bash\
+pip install -r requirements.txt\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf0 \strokec2 Your 
+\f3\fs30\fsmilli15210 \strokec2 requirements.txt
+\f0\fs28 \strokec2  should include:\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b0\fs26 \cf0 \strokec2 \
+torch>=2.0.0\
+transformers>=4.35.0\
+datasets>=2.19.0\
+scikit-learn>=1.3.0\
+pandas\
+matplotlib\
+streamlit>=1.28.0\
+nltk>=3.8.0\
+wordcloud>=1.8.2.2\
+scipy>=1.11.0\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs24 \cf3 \strokec3 \
+\pard\pardeftab720\sa321\partightenfactor0
+
+\f0\b\fs48 \cf0 \strokec2 Step 2: Fine-Tune RoBERTa Model\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf0 \strokec2 \uc0\u9654  Run the 
+\f0\b fine-tune script
+\f1\b0 :\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 \strokec2 bash\
+python fine_tune_roberta.py\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs24 \cf0 \strokec2 \
+\uc0\u55357 \u56514  What happens here:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Loads the dataset from 
+\f2\fs26 data/amazon_reviews.csv
+\f1\fs24 .\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Fine-tunes 
+\f2\fs26 cardiffnlp/twitter-roberta-base-sentiment
+\f1\fs24  model for 3 classes:\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa240\partightenfactor0
+\ls1\ilvl1
+\f0\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Negative
+\f1\b0  (0), 
+\f0\b Neutral
+\f1\b0  (1), 
+\f0\b Positive
+\f1\b0  (2).\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Saves fine-tuned model inside:\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 bash\
+/models/roberta_finetuned/\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls2\ilvl0
+\f1\fs24 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Saves training plots inside:\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 \
+bash\
+/plots/\
+  - loss_vs_steps.png\
+  - accuracy_vs_steps.png\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs24 \cf0 \strokec2 \
+\uc0\u9989  
+\f0\b Outputs generated:
+\f1\b0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls3\ilvl0
+\f2\fs26 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 models/roberta_finetuned/
+\f1\fs24 \
+\ls3\ilvl0
+\f2\fs26 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 plots/loss_vs_steps.png
+\f1\fs24 \
+\ls3\ilvl0
+\f2\fs26 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 plots/accuracy_vs_steps.png
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa321\partightenfactor0
+
+\f0\b\fs48 \cf0 \strokec2 Step 3: Fine-Tune VADER Model\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf0 \strokec2 \uc0\u9654  Run the 
+\f0\b VADER expansion script
+\f1\b0 :\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 \strokec2 bash\
+python fine_tune_vader.py\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs24 \cf0 \strokec2 \
+\uc0\u55357 \u56514  What happens here:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls4\ilvl0\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Loads 
+\f2\fs26 amazon_reviews.csv
+\f1\fs24 .\
+\ls4\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Dynamically builds a 
+\f0\b custom VADER lexicon
+\f1\b0  based on Amazon product reviews.\
+\ls4\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Updates VADER's internal dictionary.\
+\ls4\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Evaluates expanded VADER's accuracy on the dataset.\
+\ls4\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Saves the custom lexicon.\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 \strokec2 \uc0\u9989  
+\f0\b Outputs generated:
+\f1\b0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls5\ilvl0
+\f2\fs26 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 models/vader_finetuned/custom_vader_lexicon.txt
+\f1\fs24 \
+\ls5\ilvl0
+\f2\fs26 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 models/vader_finetuned/sample_predictions.csv
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa321\partightenfactor0
+
+\f0\b\fs48 \cf0 \strokec2 Step 4: Run Streamlit App \uc0\u55357 \u56960 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf0 \strokec2 \uc0\u9654  Launch the final 
+\f0\b interactive web app
+\f1\b0 :\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 \strokec2 bash\
+streamlit run streamlit_app.py\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs24 \cf0 \strokec2 \uc0\u55357 \u56523  What this app does:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls6\ilvl0\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Loads 
+\f0\b fine-tuned RoBERTa
+\f1\b0  and 
+\f0\b expanded VADER
+\f1\b0  models.\
+\ls6\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Takes 
+\f0\b live user review input
+\f1\b0 .\
+\ls6\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Displays:\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa240\partightenfactor0
+\ls6\ilvl1\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Predicted Sentiment from both models.\
+\ls6\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Confidence scores (%) properly.\
+\ls6\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Beautiful Pie Charts.\
+\ls6\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 WordClouds from input words.\
+\ls6\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Training performance summaries.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls6\ilvl0\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Has blurred stylish background and UI improvements.\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 \strokec2 \uc0\u9989  
+\f0\b You can interact and test live review predictions!
+\f1\b0 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa321\partightenfactor0
+
+\f0\b\fs48 \cf0 \strokec2 \uc0\u55358 \u56825  Folder Structure After Everything\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b0\fs26 \cf0 \
+amazon_sentiment_project/\
+\uc0\u9474 \
+\uc0\u9500 \u9472 \u9472  data/\
+\uc0\u9474    \u9492 \u9472 \u9472  amazon_reviews.csv\
+\uc0\u9474 \
+\uc0\u9500 \u9472 \u9472  models/\
+\uc0\u9474    \u9500 \u9472 \u9472  roberta_finetuned/\
+\uc0\u9474    \u9474     \u9500 \u9472 \u9472  config.json\
+\uc0\u9474    \u9474     \u9500 \u9472 \u9472  pytorch_model.bin\
+\uc0\u9474    \u9474     \u9500 \u9472 \u9472  tokenizer.json\
+\uc0\u9474    \u9500 \u9472 \u9472  vader_finetuned/\
+\uc0\u9474         \u9500 \u9472 \u9472  custom_vader_lexicon.txt\
+\uc0\u9474         \u9500 \u9472 \u9472  sample_predictions.csv\
+\uc0\u9474 \
+\uc0\u9500 \u9472 \u9472  plots/\
+\uc0\u9474    \u9500 \u9472 \u9472  loss_vs_steps.png\
+\uc0\u9474    \u9500 \u9472 \u9472  accuracy_vs_steps.png\
+\uc0\u9474 \
+\uc0\u9500 \u9472 \u9472  fine_tune_roberta.py\
+\uc0\u9500 \u9472 \u9472  fine_tune_vader.py\
+\uc0\u9500 \u9472 \u9472  streamlit_app.py\
+\uc0\u9500 \u9472 \u9472  requirements.txt\
+\uc0\u9500 \u9472 \u9472  project.ipynb \
+}

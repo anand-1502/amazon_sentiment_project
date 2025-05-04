@@ -1,0 +1,46 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2820
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 AppleColorEmoji;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww12320\viewh9500\viewkind0
+\deftab720
+\pard\pardeftab720\sa298\partightenfactor0
+
+\f0\fs36 \cf0 \expnd0\expndtw0\kerning0
+\uc0\u55357 \u56514  FILE EXPLANATION\
+\
+fine_tune_roberta.py\
+- Fine-tunes RoBERTa transformer model on Amazon review data.\
+- Saves model, tokenizer, training loss/accuracy plots.\
+\
+fine_tune_vader.py\
+- Fine-tunes classic VADER by expanding lexicon based on dataset.\
+- Saves the new lexicon and accuracy.\
+\
+fine_tune_vader_boosted.py\
+- Fine-tunes VADER with smart lexicon expansion.\
+- Trains an XGBoost hybrid model using VADER scores (neg, neu, pos, compound).\
+- Saves model and improved accuracy.\
+\
+streamlit_app.py\
+- Launches an interactive web app.\
+- Allows users to input reviews and see predictions from:\
+   - Normal VADER\
+   - Boosted VADER (Hybrid XGBoost)\
+   - Fine-tuned RoBERTa\
+\
+requirements.txt\
+- Lists Python libraries needed for the project.\
+\
+project.ipynb\
+- Jupyter notebook for basic exploratory data analysis (EDA) and review text exploration.\
+\
+models/\
+- Directory to save all fine-tuned models, tokenizers, accuracies.\
+\
+plots/\
+- Directory to save RoBERTa training visualizations.\
+\
+data/\
+- Directory to store the original Amazon reviews CSV dataset.\
+}
