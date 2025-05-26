@@ -3,44 +3,6 @@
 Welcome to the **Amazon Sentiment Analyzer**, an interactive NLP-based application built using **RoBERTa**, **VADER**, and a hybrid **VADER + XGBoost** model. This project fine-tunes cutting-edge models on Amazon Fine Food Reviews and deploys a gorgeous **Streamlit** UI that makes sentiment comparison seamless and insightful.
 
 ---
-## 📁 Project Structure
-
-| Folder/File                              | Description                                                                 |
-|------------------------------------------|-----------------------------------------------------------------------------|
-| `.ipynb_checkpoints/`                    | Auto-generated notebook checkpoints                                        |
-| `EDA.ipynb`                              | Exploratory Data Analysis notebook                                         |
-| `EDA copy.ipynb`                         | Backup of EDA notebook                                                     |
-| `data/amazon_reviews.csv`               | Original Amazon Fine Food Reviews dataset                                 |
-| `models/roberta_finetuned/`             | Fine-tuned RoBERTa model, tokenizer, and config files                     |
-| ├── `accuracy.txt`                      | Text log of RoBERTa evaluation accuracy                                   |
-| ├── `model.safetensors`                 | Trained RoBERTa model weights                                              |
-| ├── `tokenizer_config.json`             | Tokenizer configuration                                                    |
-| └── `vocab.json`, `merges.txt`, etc.    | Tokenizer components                                                       |
-| `models/vader_boosted/`                 | Hybrid VADER + XGBoost model and custom lexicon                           |
-| ├── `accuracy.txt`                      | Boosted model evaluation log                                               |
-| ├── `custom_vader_boosted_lexicon.txt` | Extended VADER lexicon with domain-specific terms                         |
-| └── `vader_hybrid_model.joblib`         | Trained XGBoost classifier on VADER scores                                |
-| `models/vader_finetuned/`               | Custom fine-tuned VADER model output                                      |
-| `outputs/`                              | Directory for future exported results or logs                             |
-| `plots/accuracy_vs_steps.png`          | Accuracy vs steps graph for RoBERTa                                       |
-| `plots/loss_vs_steps.png`              | Loss vs steps graph for RoBERTa                                           |
-| `roberta model proof pdf`              | Evidence file for model verification                                      |
-| `background.jpg`                        | Background image used in Streamlit UI                                     |
-| `file explanations.rtf`                | Brief explanations of each script/module                                  |
-| `final image.pdf`                       | Final visual or diagram for presentation                                  |
-| `fine_tune_roberta.py`                 | Script to fine-tune RoBERTa on the dataset                                |
-| `fine_tune_vader.py`                   | Script to enhance and evaluate VADER                                      |
-| `fine_tune_vader_boosted.py`           | Script to train XGBoost on VADER scores                                   |
-| `FSE 570 - ASME report.pdf`            | Final report document                                                      |
-| `FSE 570 Final Presentation.pdf`       | Project presentation slides (PDF)                                         |
-| `FSE 570 Final Presentation.pptx`      | Project presentation slides (PPTX)                                        |
-| `how to setup.rtf`                     | Full setup guide for environment and scripts                              |
-| `requirements.txt`                     | Python dependency list                                                     |
-| `reviews.csv`                          | Another copy or version of the reviews dataset                            |
-| `streamlit_app.py`                     | Streamlit web app to compare model predictions                            |
-| `workflow file.rtf`                    | Workflow explanation document                                              |
-
----
 
 ## 🎯 Project Highlights
 
@@ -144,4 +106,43 @@ python fine_tune_vader.py
 
 # Step 4: Launch Streamlit App 🚀
 streamlit run streamlit_app.py
+
+---
+
+## 📁 Project Structure
+
+| Folder/File                              | Description                                                                 |
+|------------------------------------------|-----------------------------------------------------------------------------|
+| `.ipynb_checkpoints/`                    | Auto-generated notebook checkpoints                                        |
+| `EDA.ipynb`                              | Exploratory Data Analysis notebook                                         |
+| `EDA copy.ipynb`                         | Backup of EDA notebook                                                     |
+| `data/amazon_reviews.csv`               | Original Amazon Fine Food Reviews dataset                                 |
+| `models/roberta_finetuned/`             | Fine-tuned RoBERTa model, tokenizer, and config files                     |
+| ├─ `accuracy.txt`                      | Text log of RoBERTa evaluation accuracy                                   |
+| ├─ `model.safetensors`                 | Trained RoBERTa model weights                                              |
+| ├─ `tokenizer_config.json`             | Tokenizer configuration                                                    |
+| └── `vocab.json`, `merges.txt`, etc.    | Tokenizer components                                                       |
+| `models/vader_boosted/`                 | Hybrid VADER + XGBoost model and custom lexicon                           |
+| ├─ `accuracy.txt`                      | Boosted model evaluation log                                               |
+| ├─ `custom_vader_boosted_lexicon.txt` | Extended VADER lexicon with domain-specific terms                         |
+| └── `vader_hybrid_model.joblib`         | Trained XGBoost classifier on VADER scores                                |
+| `models/vader_finetuned/`               | Custom fine-tuned VADER model output                                      |
+| `outputs/`                              | Directory for future exported results or logs                             |
+| `plots/accuracy_vs_steps.png`          | Accuracy vs steps graph for RoBERTa                                       |
+| `plots/loss_vs_steps.png`              | Loss vs steps graph for RoBERTa                                           |
+| `roberta model proof pdf`              | Evidence file for model verification                                      |
+| `background.jpg`                        | Background image used in Streamlit UI                                     |
+| `file explanations.rtf`                | Brief explanations of each script/module                                  |
+| `final image.pdf`                       | Final visual or diagram for presentation                                  |
+| `fine_tune_roberta.py`                 | Script to fine-tune RoBERTa on the dataset                                |
+| `fine_tune_vader.py`                   | Script to enhance and evaluate VADER                                      |
+| `fine_tune_vader_boosted.py`           | Script to train XGBoost on VADER scores                                   |
+| `FSE 570 - ASME report.pdf`            | Final report document                                                      |
+| `FSE 570 Final Presentation.pdf`       | Project presentation slides (PDF)                                         |
+| `FSE 570 Final Presentation.pptx`      | Project presentation slides (PPTX)                                        |
+| `how to setup.rtf`                     | Full setup guide for environment and scripts                              |
+| `requirements.txt`                     | Python dependency list                                                     |
+| `reviews.csv`                          | Another copy or version of the reviews dataset                            |
+| `streamlit_app.py`                     | Streamlit web app to compare model predictions                            |
+| `workflow file.rtf`                    | Workflow explanation document                                              |
 
