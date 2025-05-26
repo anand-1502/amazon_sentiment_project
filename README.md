@@ -3,22 +3,21 @@
 Welcome to the **Amazon Sentiment Analyzer**, an interactive NLP-based application built using **RoBERTa**, **VADER**, and a hybrid **VADER + XGBoost** model. This project fine-tunes cutting-edge models on Amazon Fine Food Reviews and deploys a gorgeous **Streamlit** UI that makes sentiment comparison seamless and insightful.
 
 ---
+## 🗃️ Project Structure
 amazon_sentiment_project/
+├── data/ # Raw data (Amazon reviews)
 │
-├── data/                       # Raw data (Amazon reviews)
+├── models/ # Saved models
+│ ├── roberta_finetuned/
+│ └── vader_finetuned/
 │
-├── models/                    # Saved models
-│   ├── roberta_finetuned/
-│   └── vader_finetuned/
+├── plots/ # Training visualizations
 │
-├── plots/                     # Training visualizations
-│
-├── streamlit_app.py           # Streamlit frontend
-├── fine_tune_roberta.py       # RoBERTa training
-├── fine_tune_vader.py         # VADER enhancement
-├── project.ipynb              # EDA notebook
+├── streamlit_app.py # Streamlit frontend
+├── fine_tune_roberta.py # RoBERTa training
+├── fine_tune_vader.py # VADER enhancement
+├── project.ipynb # EDA notebook
 ├── requirements.txt
-
 ---
 
 ## 🎯 Project Highlights
