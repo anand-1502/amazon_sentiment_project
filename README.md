@@ -4,20 +4,6 @@ Welcome to the **Amazon Sentiment Analyzer**, an interactive NLP-based applicati
 
 ---
 ## 🗃️ Project Structure
-amazon_sentiment_project/
-├── data/ # Raw data (Amazon reviews)
-│
-├── models/ # Saved models
-│ ├── roberta_finetuned/
-│ └── vader_finetuned/
-│
-├── plots/ # Training visualizations
-│
-├── streamlit_app.py # Streamlit frontend
-├── fine_tune_roberta.py # RoBERTa training
-├── fine_tune_vader.py # VADER enhancement
-├── project.ipynb # EDA notebook
-├── requirements.txt
 ---
 
 ## 🎯 Project Highlights
