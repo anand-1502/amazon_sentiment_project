@@ -67,21 +67,20 @@ Welcome to the **Amazon Sentiment Analyzer**, an interactive NLP-based applicati
 
 ### 🔹 App Landing Page  
 ![App Landing Page](landing.png)
-
-📌 **Placeholder #1 – First page of Streamlit**
-
----
-
-📌 **Placeholder #2 – First output screenshot**
-
-![result 1](result1.png)
+> _A stylish and intuitive entry screen where users can input Amazon product reviews and select models for sentiment analysis._
 
 ---
 
-📌 **Placeholder #3 – Second output screenshot**
+### 🔹 Output Sample – Sentiment Prediction Comparison  
+![Sentiment Prediction Result](result1.png)  
+> _Displays the sentiment prediction results from Normal VADER and RoBERTa models with confidence scores and pie chart visualizations._
 
-![result 2](result2.png)
 ---
+
+### 🔹 Output Sample – WordCloud & Model Accuracy  
+![WordCloud and Accuracy](result2.png)  
+> _Shows the combined WordCloud generated from user input and the accuracy comparison of Normal VADER, Boosted VADER (Hybrid), and RoBERTa models._
+
 
 ## ⚙️ How to Set Up
 
