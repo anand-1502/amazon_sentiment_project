@@ -66,24 +66,21 @@ Welcome to the **Amazon Sentiment Analyzer**, an interactive NLP-based applicati
 ## 📸 Streamlit App Preview
 
 ### 🔹 App Landing Page  
-> _(Insert Streamlit UI Screenshot Here)_
+![App Landing Page](landing.png)
 
 📌 **Placeholder #1 – First page of Streamlit**
 
 ---
 
-### 🔹 Output Sample – Model Comparison  
-> _(Insert prediction output showing VADER, Boosted VADER, RoBERTa)_
-
 📌 **Placeholder #2 – First output screenshot**
+
+![result 1](result1.png)
 
 ---
 
-### 🔹 Output Sample – WordClouds & Pie Charts  
-> _(Insert visual output with WordCloud and Pie chart)_
-
 📌 **Placeholder #3 – Second output screenshot**
 
+![result 2](result2.png)
 ---
 
 ## ⚙️ How to Set Up
